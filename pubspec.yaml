@@ -1,0 +1,612 @@
+name: tdesign_flutter_generator
+description: flutter
+
+publish_to: none
+version: 1.0.0+1
+
+environment: 
+  sdk: ">=2.13.0"
+
+dependency_overrides: 
+  analyzer_plugin: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analyzer_plugin
+      dartGenerate: 3.2.6
+  service_extension_router: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/service_extension_router
+      dartGenerate: 3.2.6
+  test_runner: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/test_runner
+      dartGenerate: 3.2.6
+  native_stack_traces: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/native_stack_traces
+      dartGenerate: 3.2.6
+  modular_test: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/modular_test
+      dartGenerate: 3.2.6
+  frontend_server: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/frontend_server
+      dartGenerate: 3.2.6
+  analysis_server_client: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analysis_server_client
+      dartGenerate: 3.2.6
+  vm_service: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/vm_service
+      dartGenerate: 3.2.6
+  mmap: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/mmap
+      dartGenerate: 3.2.6
+  status_file: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/status_file
+      dartGenerate: 3.2.6
+  linter: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/linter
+      dartGenerate: 3.2.6
+  _fe_analyzer_shared: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/_fe_analyzer_shared
+      dartGenerate: 3.2.6
+  js: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/js
+      dartGenerate: 3.2.6
+  sourcemap_testing: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/sourcemap_testing
+      dartGenerate: 3.2.6
+  wasm_builder: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/wasm_builder
+      dartGenerate: 3.2.6
+  smith: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/smith
+      dartGenerate: 3.2.6
+  js_ast: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/js_ast
+      dartGenerate: 3.2.6
+  vm_service_protos: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/vm_service_protos
+      dartGenerate: 3.2.6
+  js_runtime: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/js_runtime
+      dartGenerate: 3.2.6
+  meta: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/meta
+      dartGenerate: 3.2.6
+  dart_internal: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart_internal
+      dartGenerate: 3.2.6
+  scrape: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/scrape
+      dartGenerate: 3.2.6
+  build_integration: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/build_integration
+      dartGenerate: 3.2.6
+  analyzer_utilities: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analyzer_utilities
+      dartGenerate: 3.2.6
+  dart2js_tools: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart2js_tools
+      dartGenerate: 3.2.6
+  testing: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/testing
+      dartGenerate: 3.2.6
+  _js_interop_checks: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/_js_interop_checks
+      dartGenerate: 3.2.6
+  vm: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/vm
+      dartGenerate: 3.2.6
+  dart2js_runtime_metrics: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart2js_runtime_metrics
+      dartGenerate: 3.2.6
+  dev_compiler: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dev_compiler
+      dartGenerate: 3.2.6
+  async_helper: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/async_helper
+      dartGenerate: 3.2.6
+  js_shared: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/js_shared
+      dartGenerate: 3.2.6
+  dart2wasm: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart2wasm
+      dartGenerate: 3.2.6
+  dartdev: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dartdev
+      dartGenerate: 3.2.6
+  analyzer_cli: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analyzer_cli
+      dartGenerate: 3.2.6
+  bisect_dart: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/bisect_dart
+      dartGenerate: 3.2.6
+  telemetry: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/telemetry
+      dartGenerate: 3.2.6
+  dds: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dds
+      dartGenerate: 3.2.6
+  vm_snapshot_analysis: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/vm_snapshot_analysis
+      dartGenerate: 3.2.6
+  dap: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dap
+      dartGenerate: 3.2.6
+  analysis_server: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analysis_server
+      dartGenerate: 3.2.6
+  compiler: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/compiler
+      dartGenerate: 3.2.6
+  analyzer: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/analyzer
+      dartGenerate: 3.2.6
+  dds_service_extensions: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dds_service_extensions
+      dartGenerate: 3.2.6
+  dart2native: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart2native
+      dartGenerate: 3.2.6
+  kernel: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/kernel
+      dartGenerate: 3.2.6
+  nnbd_migration: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/nnbd_migration
+      dartGenerate: 3.2.6
+  dart2js_info: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/dart2js_info
+      dartGenerate: 3.2.6
+  front_end: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/front_end
+      dartGenerate: 3.2.6
+  expect: 
+    git: 
+      url: https://github.com/dart-lang/sdk.git
+      ref: 3.2.6
+      path: pkg/expect
+      dartGenerate: 3.2.6
+  args: 
+    git: 
+      url: https://dart.googlesource.com/args.git
+      ref: 5a4e16f1e4c08b01498a9dce8aeda1a60161cd52
+      dartGenerate: 3.2.6
+  async: 
+    git: 
+      url: https://dart.googlesource.com/async.git
+      ref: 75efa6cc08b2fc906fac4b6fdfdbcf6da7d0a2da
+      dartGenerate: 3.2.6
+  bazel_worker: 
+    git: 
+      url: https://dart.googlesource.com/bazel_worker.git
+      ref: 159e67182044b2d5edd89d12a873487d1d1343c1
+      dartGenerate: 3.2.6
+  benchmark_harness: 
+    git: 
+      url: https://dart.googlesource.com/benchmark_harness.git
+      ref: 7d0d28e7946702db34ae121543774f60bf8cf03c
+      dartGenerate: 3.2.6
+  boolean_selector: 
+    git: 
+      url: https://dart.googlesource.com/boolean_selector.git
+      ref: f255921c7155da2167e8c96e04e527180787aafb
+      dartGenerate: 3.2.6
+  browser_launcher: 
+    git: 
+      url: https://dart.googlesource.com/browser_launcher.git
+      ref: 1f69393d63a2f8d36d00b86cdd20df70c347af82
+      dartGenerate: 3.2.6
+  characters: 
+    git: 
+      url: https://dart.googlesource.com/characters.git
+      ref: 7633a16a22c626e19ca750223237396315268a06
+      dartGenerate: 3.2.6
+  cli_util: 
+    git: 
+      url: https://dart.googlesource.com/cli_util.git
+      ref: 44118e35e55c75f84fbc5ead051424ee1e73e406
+      dartGenerate: 3.2.6
+  clock: 
+    git: 
+      url: https://dart.googlesource.com/clock.git
+      ref: 1e75f08d3428bcd6f4b7cf70e788f24fc9b661e1
+      dartGenerate: 3.2.6
+  collection: 
+    git: 
+      url: https://dart.googlesource.com/collection.git
+      ref: 91afde43f488eef618454b896301c6ff59af72e0
+      dartGenerate: 3.2.6
+  convert: 
+    git: 
+      url: https://dart.googlesource.com/convert.git
+      ref: c058c8f4ebfdc09a5122db7988acd9e117a7da48
+      dartGenerate: 3.2.6
+  crypto: 
+    git: 
+      url: https://dart.googlesource.com/crypto.git
+      ref: 1e26879c8f166850288e8722c590a465b4461f1f
+      dartGenerate: 3.2.6
+  csslib: 
+    git: 
+      url: https://dart.googlesource.com/csslib.git
+      ref: bd30a1a773ec66d3e435dfc53fc140f1967716da
+      dartGenerate: 3.2.6
+  dartdoc: 
+    git: 
+      url: https://dart.googlesource.com/dartdoc.git
+      ref: 8c103397734f4dba75915e40c734a88e29a35f26
+      dartGenerate: 3.2.6
+  ffi: 
+    git: 
+      url: https://dart.googlesource.com/ffi.git
+      ref: d36e05af55293bcc511d6b3a99ea4b8cb69f6323
+      dartGenerate: 3.2.6
+  fixnum: 
+    git: 
+      url: https://dart.googlesource.com/fixnum.git
+      ref: 87ed0658f32f992dc7360b77513eadfa7056aa9d
+      dartGenerate: 3.2.6
+  file: 
+    git: 
+      url: https://dart.googlesource.com/external/github.com/google/file.dart
+      path: packages/file
+      ref: a18ad1ce88eaeb5a11a13ef8fc25d1e78b546c59
+      dartGenerate: 3.2.6
+  glob: 
+    git: 
+      url: https://dart.googlesource.com/glob.git
+      ref: 9c1996f9f9326d776fe151f292912113b8b64aa3
+      dartGenerate: 3.2.6
+  html: 
+    git: 
+      url: https://dart.googlesource.com/html.git
+      ref: a1b193e95f13c995e7f7200ce0d363de5952e383
+      dartGenerate: 3.2.6
+  http: 
+    git: 
+      url: https://dart.googlesource.com/http.git
+      path: pkgs/http
+      ref: 12516197c28a0763b1f90c26b87660810bf58cc8
+      dartGenerate: 3.2.6
+  http_multi_server: 
+    git: 
+      url: https://dart.googlesource.com/http_multi_server.git
+      ref: 9d62ea396d7d282592edf994378f67fcde982ce8
+      dartGenerate: 3.2.6
+  http_parser: 
+    git: 
+      url: https://dart.googlesource.com/http_parser.git
+      ref: d2d03e7dfa3b7a99515b16f827650d6e210799b5
+      dartGenerate: 3.2.6
+  intl: 
+    git: 
+      url: https://dart.googlesource.com/intl.git
+      ref: 5d65e3808ce40e6282e40881492607df4e35669f
+      dartGenerate: 3.2.6
+  json_rpc_2: 
+    git: 
+      url: https://dart.googlesource.com/json_rpc_2.git
+      ref: 50a37863be221f43ef07533c0c154ae676fc5df0
+      dartGenerate: 3.2.6
+  lints: 
+    git: 
+      url: https://dart.googlesource.com/lints.git
+      ref: b044acab9f6669b3d8e781923a8ff86877801177
+      dartGenerate: 3.2.6
+  logging: 
+    git: 
+      url: https://dart.googlesource.com/logging.git
+      ref: bcaad0f781a889d6e5cf8fc564fd0722c446b96e
+      dartGenerate: 3.2.6
+  markdown: 
+    git: 
+      url: https://dart.googlesource.com/markdown.git
+      ref: 6cfd6f17651a8ba31b5a268f1139bb2c039dd4d4
+      dartGenerate: 3.2.6
+  matcher: 
+    git: 
+      url: https://dart.googlesource.com/matcher.git
+      ref: 80910d6698576ba486ace6e5fdf0e27324f138db
+      dartGenerate: 3.2.6
+  mime: 
+    git: 
+      url: https://dart.googlesource.com/mime.git
+      ref: 37ef637c35896e289fdd37c0ea4680df4ab9f543
+      dartGenerate: 3.2.6
+  mockito: 
+    git: 
+      url: https://dart.googlesource.com/mockito.git
+      ref: 097e5635a6c1859e03e9c606c2ab4cfa74618bcc
+      dartGenerate: 3.2.6
+  package_config: 
+    git: 
+      url: https://dart.googlesource.com/package_config.git
+      ref: ae7ad83de97aba507fd05e97cc372bc6695c1759
+      dartGenerate: 3.2.6
+  path: 
+    git: 
+      url: https://dart.googlesource.com/path.git
+      ref: 96d9183ad4f9e48109fa8d4b8269cf75f13922dd
+      dartGenerate: 3.2.6
+  pool: 
+    git: 
+      url: https://dart.googlesource.com/pool.git
+      ref: a5bee3540a2b5b3a3c34038667e7cd7bb514dc62
+      dartGenerate: 3.2.6
+  protobuf: 
+    git: 
+      url: https://dart.googlesource.com/protobuf.git
+      path: protobuf
+      ref: c16bc891978a1764f0d6d8eca54f420242c78a6a
+      dartGenerate: 3.2.6
+  pub_semver: 
+    git: 
+      url: https://dart.googlesource.com/pub_semver.git
+      ref: f0be74a446f971db478e68b59ea62e393d6df3bd
+      dartGenerate: 3.2.6
+  pub: 
+    git: 
+      url: https://dart.googlesource.com/pub.git
+      ref: fca927ae2662204805e1646c0c0687369001a41a
+      dartGenerate: 3.2.6
+  shelf: 
+    git: 
+      url: https://dart.googlesource.com/shelf.git
+      path: pkgs/shelf
+      ref: 485197819b93a9f9342c389f1715fb8e17a7ac0f
+      dartGenerate: 3.2.6
+  source_maps: 
+    git: 
+      url: https://dart.googlesource.com/source_maps.git
+      ref: eb3d40a6193adc63da958ed9451e3218bd6e95a0
+      dartGenerate: 3.2.6
+  source_span: 
+    git: 
+      url: https://dart.googlesource.com/source_span.git
+      ref: 48d0f574ee0a92a241c865d47f461803a664b5ba
+      dartGenerate: 3.2.6
+  source_map_stack_trace: 
+    git: 
+      url: https://dart.googlesource.com/source_map_stack_trace.git
+      ref: 196d7bfa58ef307687907c323ab8e5fb1f382afa
+      dartGenerate: 3.2.6
+  sse: 
+    git: 
+      url: https://dart.googlesource.com/sse.git
+      ref: eeb2588ce56a5b2f1e4bbd88c2b35c910c505b71
+      dartGenerate: 3.2.6
+  stack_trace: 
+    git: 
+      url: https://dart.googlesource.com/stack_trace.git
+      ref: bcf2a0b1b7d4abaeedcb8b18ff41e4994aea1b17
+      dartGenerate: 3.2.6
+  stream_channel: 
+    git: 
+      url: https://dart.googlesource.com/stream_channel.git
+      ref: 0ce7ab69c3a2ab83cdeb9dc60e1bacbb83abc165
+      dartGenerate: 3.2.6
+  string_scanner: 
+    git: 
+      url: https://dart.googlesource.com/string_scanner.git
+      ref: da9142cf9809e7e1364144b8193ec60d87f0a4b8
+      dartGenerate: 3.2.6
+  sync_http: 
+    git: 
+      url: https://dart.googlesource.com/sync_http.git
+      ref: 8233f74cd8a87707c13beceb59b56bca41b52966
+      dartGenerate: 3.2.6
+  tar: 
+    git: 
+      url: https://dart.googlesource.com/external/github.com/simolus3/tar.git
+      ref: 3c68cba8e51c569428222b9185469249206172c6
+      dartGenerate: 3.2.6
+  term_glyph: 
+    git: 
+      url: https://dart.googlesource.com/term_glyph.git
+      ref: 1b28285a7e818b8e87c4d2119d968c5b36d73c7a
+      dartGenerate: 3.2.6
+  test: 
+    git: 
+      url: https://dart.googlesource.com/test.git
+      path: pkgs/test
+      ref: 8191a355cefe5e6073e597d139bfb46e4b00c493
+      dartGenerate: 3.2.6
+  test_api: 
+    git: 
+      url: https://dart.googlesource.com/test.git
+      path: pkgs/test_api
+      ref: 8191a355cefe5e6073e597d139bfb46e4b00c493
+      dartGenerate: 3.2.6
+  test_core: 
+    git: 
+      url: https://dart.googlesource.com/test.git
+      path: pkgs/test_core
+      ref: 8191a355cefe5e6073e597d139bfb46e4b00c493
+      dartGenerate: 3.2.6
+  test_descriptor: 
+    git: 
+      url: https://dart.googlesource.com/test_descriptor.git
+      ref: 030193dfdfbf85930eae8536909c546151da9e9c
+      dartGenerate: 3.2.6
+  test_process: 
+    git: 
+      url: https://dart.googlesource.com/test_process.git
+      ref: 2a6ee23fc2550fa466105819f5335fcfbab14035
+      dartGenerate: 3.2.6
+  test_reflective_loader: 
+    git: 
+      url: https://dart.googlesource.com/test_reflective_loader.git
+      ref: 45c57d62fb08471681cd0b0a1c3b131bf0122929
+      dartGenerate: 3.2.6
+  typed_data: 
+    git: 
+      url: https://dart.googlesource.com/typed_data.git
+      ref: 80e8943524a627f7ff421ace824f38105983e89a
+      dartGenerate: 3.2.6
+  usage: 
+    git: 
+      url: https://dart.googlesource.com/usage.git
+      ref: 7b12d510b5abde8a216437b8430ccfd02273625c
+      dartGenerate: 3.2.6
+  vector_math: 
+    git: 
+      url: https://dart.googlesource.com/external/github.com/google/vector_math.dart.git
+      ref: d54af8a2b8b8d935a475a4da6ea5a1b343f29562
+      dartGenerate: 3.2.6
+  watcher: 
+    git: 
+      url: https://dart.googlesource.com/watcher.git
+      ref: 1aed03e2a8005f45083fdb38cbd4b684cd23082f
+      dartGenerate: 3.2.6
+  yaml_edit: 
+    git: 
+      url: https://dart.googlesource.com/yaml_edit.git
+      ref: 4a9734dda12f63ef9eee4121f87ff4401e25a607
+      dartGenerate: 3.2.6
+  yaml: 
+    git: 
+      url: https://dart.googlesource.com/yaml.git
+      ref: ae001879aa377afee2e70cf11b8716d6cc3e2658
+      dartGenerate: 3.2.6

@@ -1,0 +1,4 @@
+[submodule "tdesign_flutter"]
+	path = tdesign_flutter
+	url = https://github.com/Tencent/tdesign-flutter.git
+	branch = develop
