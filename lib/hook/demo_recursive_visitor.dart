@@ -26,7 +26,15 @@ class DemoRecursiveVisitor extends RecursiveVisitor {
             node.fileStartOffset,
             min(node.fileEndOffset + 1, utf8String.codeUnits.length));
         var groupName = '';
-        if (annotation is ConstructorInvocation) {
+        if (annotation is ConstantExpression) {
+          if (annotation.constant is InstanceConstant) {
+            (annotation.constant as InstanceConstant).fieldValues.forEach((key, value) {
+              if (key.asField.name.text == 'group') {
+                groupName = (value as StringConstant).value;
+              }
+            });
+          }
+        } else if (annotation is ConstructorInvocation) {
           annotation.arguments.named.forEach((element) {
             if (element.name == 'group' && element.value is StringLiteral) {
               groupName = (element.value as StringLiteral).value;
@@ -35,7 +43,7 @@ class DemoRecursiveVisitor extends RecursiveVisitor {
         }
         if (groupName.isNotEmpty) {
           try {
-            var file = getFile(annotation, groupName, node);
+            var file = getFile(groupName, node);
 
             // 去掉第一行的注解
             methodString = methodString.substring(methodString.indexOf('\n'), methodString.length);
@@ -50,13 +58,10 @@ class DemoRecursiveVisitor extends RecursiveVisitor {
     }
   }
 
-  File getFile(ConstructorInvocation annotation, String groupName, Procedure node) {
-    var annotationPath =
-        (annotation.targetReference.node as Constructor).fileUri.path;
-    var basePath = annotationPath.substring(
-        0, annotationPath.lastIndexOf('/example/lib/'));
-    var filePath =
-        '$basePath/example/assets/code/${groupName}.${node.name.text}.txt';
+  File getFile(String groupName, Procedure node) {
+    var annotationPath = node.fileUri.path;
+    var basePath = annotationPath.substring(0, annotationPath.lastIndexOf('/example/lib/'));
+    var filePath = '$basePath/example/assets/code/${groupName}.${node.name.text}.txt';
     var file = File(filePath);
     if (!file.existsSync()) {
       file.createSync(recursive: true);
